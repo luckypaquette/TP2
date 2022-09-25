@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Logique de Programmation: Travail Partiel 2</title>
+    <meta name="author" content="Luc Paquette">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <form name="Formulaire">
+        <h2>Calcul des Résultats finaux:COURS D’INFORMATIQUE</h2>
+        <div>
+            <h3>Veuillez inscrire le Nom de Étudiant(e):</h3>
+            <input type="text" size="40" name="nommetudiant" ><br>
+
+            <h3>Veuillez écrire le numéro de Matricule (DA):</h3>
+            <input type="text" size="40" name="nummatricule">
+        </div>
+
+        <div>
+            <h3>Veuillez inscrire le résultat à l'examen correspondant:</h3>
+            <label>Examen 1</label>
+            <input type="text" size="10" name="noteexam1" placeholder="max. 20 points" >/20 points
+            <br>
+            <label>Examen 2</label>
+            <input type="text" size="10" name="noteexam2" placeholder="max. 20 points" >/20 points
+            <br>
+            <label>Examen 3</label>
+            <input type="text" size="10" name="noteexam3" placeholder="max. 30 points" >/30 points
+            <br>
+        </div>
+
+        <div>
+            <h3>Veuillez inscrire le résultat au travail correspondant:</h3>
+            <label>Travail 1</label>
+            <input type="text" size="10" name="notetravail1" placeholder="max. 20 points" >/20 points
+            <br>
+            <label>Travail 2</label>
+            <input type="text" size="10" name="notetravail2" placeholder="max. 10 points" >/10 points
+            <br>
+            <label>Travail 3</label>
+            <input type="text" size="10" name="notetravail3" placeholder="max. 20 points" >/20 points
+            <br>
+            <label>Travail 4</label>
+            <input type="text" size="10" name="notetravail4" placeholder="max. 15 points" >/15 points
+            <br><br>
+            <br><br>
+            <div>
+                <button onclick="fCalcul()" type="button"value=>Déclencher le calcul</button>
+                <button type="reset" onclick="reset()">réinitialiser</button>
+            </div>
+            <div>
+                <label>Résultat Final:</label>
+                <input type="text" size="10" name="resultat" id="Resultat">%
+                <label type="text" id="Mention"></label>
+            </div>
+    </form>
+</body>
+
+</html>
